@@ -70,7 +70,7 @@ async def killdabot(event):
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`RAM-UBOT Telah Dinonaktifkan`")
+                                        "`SANS-USERBOT Telah Dinonaktifkan`")
     await bot.disconnect()
 
 
@@ -81,7 +81,7 @@ async def killdabot(event):
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`RAM-UBOT Telah Di Restart`")
+                                        "`SANS-USERBOT Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
